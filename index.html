@@ -1,81 +1,127 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Golf Gripz</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Golf Gripz - Shop</title>
+  <style>
+    /* CSS styles for visual appeal */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+    
+    .product {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .product img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    
+    .product h2 {
+      color: #333;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .product p {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    
+    .add-to-bag {
+      display: inline-block;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    
+    .add-to-bag:hover {
+      background-color: #666;
+    }
+    
+    .bag {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .bag h2 {
+      color: #333;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .bag-items {
+      margin-bottom: 10px;
+    }
+    
+    .checkout {
+      text-align: right;
+    }
+    
+    .checkout button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    .checkout button:hover {
+      background-color: #666;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Golf Gripz</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+  <div class="container">
+    <h1>Golf Gripz</h1>
+    
+    <!-- Product Page -->
+    <div class="product">
+      <img src="golf_grip1.jpg" alt="Golf Grip 1">
+      <h2>Golf Grip 1</h2>
+      <p>Description of Golf Grip 1.</p>
+      <a href="#" class="add-to-bag">Add to Bag</a>
     </div>
-  </header>
-  
-  <main>
-    <section id="banner">
-      <div class="container">
-        <h2>Welcome to Golf Gripz</h2>
-        <p>Enhance your golfing experience with our premium golf grips.</p>
-        <a href="products.html" class="btn">View Products</a>
-      </div>
-    </section>
     
-    <section id="services">
-      <div class="container">
-        <h2>Our Services</h2>
-        <ul>
-          <li>Golf grip fitting and installation</li>
-          <li>Grip customization and regripping</li>
-          <li>Grip repair and maintenance</li>
-          <li>Grip consultation and expert advice</li>
-        </ul>
-      </div>
-    </section>
-    
-    <section id="products">
-      <div class="container">
-        <h2>Our Products</h2>
-        <div class="product">
-          <img src="grip1.jpg" alt="Classic Leather Grip">
-          <h3>Classic Leather Grip</h3>
-          <p>$29.99</p>
-          <a href="#" class="btn">Add to Cart</a>
-        </div>
-        
-        <div class="product">
-          <img src="grip2.jpg" alt="All-Weather Rubber Grip">
-          <h3>All-Weather Rubber Grip</h3>
-          <p>$19.99</p>
-          <a href="#" class="btn">Add to Cart</a>
-        </div>
-      </div>
-    </section>
-    
-    <section id="contact">
-      <div class="container">
-        <h2>Contact Us</h2>
-        <form>
-          <input type="text" placeholder="Name">
-          <input type="email" placeholder="Email">
-          <textarea placeholder="Message"></textarea>
-          <button type="submit" class="btn">Send Message</button>
-        </form>
-      </div>
-    </section>
-  </main>
-  
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 Golf Gripz. All rights reserved.</p>
+    <div class="product">
+      <img src="golf_grip2.jpg" alt="Golf Grip 2">
+      <h2>Golf Grip 2</h2>
+      <p>Description of Golf Grip 2.</p>
+      <a href="#" class="add-to-bag">Add to Bag</a>
     </div>
-  </footer>
+    
+    <!-- Item Bag -->
+    <div class="bag">
+      <h2>Item Bag</h2>
+      <div class="bag-items">
+        <!-- Items added dynamically via JavaScript -->
+      </div>
+      <div class="checkout">
+        <button>Checkout</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
